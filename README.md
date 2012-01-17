@@ -36,6 +36,20 @@ Warbler offers the following for JRuby users:
 * The WAR file can be put in a standard Java Servlet container (like Tomcat)
 * Everything just works by magic with minimal pain
 
+To use:
+
+    jruby -S gem install warbler
+    mkdir config && warble config # Creates config/warble.rb
+
+Edit config/warble, or grab an example from https://github.com/jruby/jruby-rack/blob/master/examples/
+
+    warble
+
+Then, plop the .war file in Tomcat's @webapps/@ directory and it should work
+like magic!
+
+(Disclaimer: Tomcat can be fussy and it won't actually always work)
+    
 Bonus: Trinidad
 ---------------
 
@@ -43,6 +57,12 @@ Blissful JRuby web application server.
 
 * Uses Tomcat under the covers
 * Absurdly easy to install and use
+
+    jruby -S gem install trinidad
+    cd ~/my-awesome-project
+    trinidad
+
+And it just works, like magic! Nothing works on Windows!
 
 OCRA (One-Click Ruby Application)
 ---------------------------------
