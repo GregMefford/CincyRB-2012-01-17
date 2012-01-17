@@ -10,3 +10,11 @@ Ruby or any other special dependencies.
 * You can tell it other resource files to bake in, too
 * Compresses itself to save space (by default)
 * Takes forever to start up, but runs well once it's going
+* Unfortunately doesn't work with JRuby
+* Does work with 1.9.2 that comes with RailsInstaller
+
+Using it:
+
+    gem install ocra
+    ocra my_script.rb
+    ./my_script.exe
